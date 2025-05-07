@@ -44,7 +44,7 @@
         </ul>
       </address>
 
-      <button class="burger-btn data-menu-open" type="button">
+      <button class="burger-btn" type="button">
         <svg class="burger-icon" width="24" height="24">
           <use href="./images/icons.svg#icon-burger">
           </use>
@@ -53,7 +53,7 @@
     </div>
     <div class="mobile-menu">
       <div class="container mobile-menu-container">
-        <button class="mobile-menu-close" data-menu-close>Close</button>
+        <button class="mobile-menu-close">Close</button>
         <nav class="mobile-menu-nav">Navigation</nav>
         <address>Address</address>
         <div>Soc link</div>
@@ -464,7 +464,7 @@
     </div>
   </footer>
 
-  <div class="modal-overlay hidden">
+  <div class="modal-overlay">
     <div class="modal">
       <button class="modal-close-button" type="button">
         <svg class="modal-close" width="8" height="8">
@@ -522,8 +522,9 @@
                 <use href="./images/icons.svg#icon-Vector-1"></use>
               </svg>
             </span>
-            I accept the terms and conditions of the
-            <a href="#" class="modal-form-checkbox-link">Privacy Policy</a>
+            <div class="checkbox-text">I accept the terms and conditions of the
+              <a href="#" class="modal-form-checkbox-link">Privacy Policy</a>
+            </div>
           </label>
 
 
@@ -534,8 +535,7 @@
     </div>
   </div>
 
-  <script src="./js/modal.js"></script>
-  <script src="./js/menu.js"></script>
+
 </body>
 
 </html>

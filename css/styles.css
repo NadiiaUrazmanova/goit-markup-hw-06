@@ -701,7 +701,6 @@ button {
     flex-direction: column;
     align-items: center;
     width: 208px;
-    margin-right: 56px;
 }
 .footer-social-media-list {
     display: flex;
@@ -806,9 +805,7 @@ button {
     line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: start;
-    align-self: flex-end;
     position: relative;
-
 }
 
 .footer-icon-plane {
@@ -816,26 +813,38 @@ button {
     color: white;
 }
 
+
 @media (min-width: 768px) {
     .footer-container {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: flex-start;
         column-gap: 24px;
         row-gap: 72px;
+        align-items: baseline;
+        padding-left: 108px;
     }
+    
+    .footer-logo {
+        align-self: flex-start;
+    }
+    .footer-social-media-text {
+        align-self: flex-start;
+    }
+
     .footer-form {
         display: flex;
         flex-direction: row;
-        justify-content: start;
-        gap: 24px;           
-    
+        align-items: center;
+        justify-content: flex-start;
+        gap:24px;    
 }
 .footer-form-subscribe {
     text-align: start;
 }
 }
+
 
 @media (min-width: 1158px) {
     .footer {
@@ -844,7 +853,6 @@ button {
     }
 
     .footer-container {
-        align-items: baseline;
         flex-wrap: nowrap;
     }
 
@@ -869,6 +877,7 @@ button {
     background-color: rgba(46, 47, 66, 0.4);
     z-index: 999;
     transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: hidden;
 }
 
 .modal-overlay.is-open {
@@ -884,11 +893,11 @@ button {
 
 .modal {
     background-color: #FCFCFC;
-    width: 408px;
-    min-height: 584px;
+    width: 288px;
+    min-height: 623px;
     border-radius: 4px;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    padding: 72px 24px 24px 24px;
+    padding: 72px 16px 24px 16px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -1052,6 +1061,7 @@ button {
     line-height: 1.17;
     letter-spacing: 0.04em;
     color: #8e8f99;
+    display: flex;
 }
 
 .span-checkbox {
@@ -1065,7 +1075,10 @@ button {
     align-items: center;
     fill: transparent;
 }
+.checkbox-text {
+    margin-left: 8px;
 
+}
 
 .label-checkbox:hover {
     color: #4D5AE5;
@@ -1074,6 +1087,7 @@ button {
 
 .modal-form-checkbox-link {
     color: #4D5AE5;
+    text-decoration: underline;
 }
 
 
@@ -1094,4 +1108,13 @@ button {
     border: none;
     border-radius: 4px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+@media (min-width: 768px) and (min-width: 1158px) {
+    .modal {
+        width: 408px;
+        min-height: 584px;
+        padding: 72px 24px 24px 24px;
+    }
 }
