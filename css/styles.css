@@ -160,6 +160,7 @@ button {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
+    z-index: 999;
 }
 .mobile-close-button {
     display: flex;
