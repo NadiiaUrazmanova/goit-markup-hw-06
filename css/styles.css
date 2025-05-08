@@ -693,9 +693,9 @@ transition-property: color;
     position: relative;
     overflow: hidden;
 }
-.portfolio-img {
+/* .portfolio-img {
     display: none;
-}
+} */
 
 
 .overlay {
@@ -747,12 +747,12 @@ transition-property: color;
 }
 
 @media (min-width: 768px) {
-.portfolio-img-mobile {
+/* .portfolio-img-mobile {
     display: none;
     }
 .portfolio-img {
     display: block;
-    }
+    } */
     .portfolio-list {
     row-gap: 72px;
     column-gap: 24px;
