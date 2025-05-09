@@ -659,23 +659,27 @@ transition-property: color;
 }
 
 @media (min-width: 768px) {
-    .team { 
-        padding-left: 108px;
-        padding-right: 108px;
-        }  
+    .team-container {
+        width: 584px;
+}
     .team-list {
         row-gap: 64px;
         column-gap: 24px;
-        }  
+        } 
+    .team-item {
+        width: calc((100% - 24px) / 2); 
+}
 }
 
 @media (min-width: 1158px) {
-.team {
-    background-color: #F4F4FD;
-
+    .team-container {
+        width: 1158px;
     }
     .team-list {
         gap: 24px;
+    }
+    .team-item {
+        width: calc((100% - 72px) / 4);
     }
 }
 
@@ -949,7 +953,7 @@ transition-property: color;
         column-gap: 24px;
         row-gap: 72px;
         align-items: baseline;
-        min-width: 584px;        
+        max-width: 584px;        
     }
     
     .footer-logo {
@@ -983,6 +987,7 @@ transition-property: color;
         padding-left: 0px;
         gap: unset;
         padding-left: 15px;
+        max-width: 1158px;
     }
 
     .footer-begin {
@@ -990,6 +995,9 @@ transition-property: color;
     }
     .footer-social-media {
         margin-right: 80px;
+}
+.footer-text {    
+    width: 264px;
 }
 }
 
